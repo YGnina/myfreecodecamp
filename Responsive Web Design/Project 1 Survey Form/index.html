@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to do the survey </p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-parts">
+        <label id="name-label" type="text" >Name</label>
+        <input id="name" placeholder="Enter your name" required>
+      </div>
+      
+      <div class="form-parts">
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="form-parts">
+        <label id="number-label" >Age (Optional)</label>
+        <input id="number" type="number" min="18" max="120" placeholder="Enter your age">
+      </div>
+
+      <div class="form-parts">
+        <p>Please select your gender</p>
+        
+        <label id="female" class="gender" > 
+          <input class="radio-in" type="radio" value="f" name="gender"> Female
+        </label>
+
+        <label id="male" class="gender" > 
+          <input class="radio-in" type="radio" value="m" name="gender"> Male
+        </label>
+        
+        <label id="other" class="gender" > 
+          <input class="radio-in" type="radio" value="n" name="gender"> Unwilling to say 
+        </label>
+
+      </div>
+      
+      <div class="form-parts">
+        <label id="experience-label">Experience Level</label>
+        <select id="dropdown"> 
+          <option value=""></option>
+          <option value="1">Junior 0-2 years</option>
+          <option value="2">Mid-level 2+ years</option>
+          <option value="3">Senior</option>
+          <option value="4">Executive</option>
+          <option value="5">Employed</option>
+        </select>
+      </div>
+
+      <div class="form-parts">
+        <p>What's your first programming language? </p>
+        
+        <label id="checkbox-label"> 
+          <input class="checkbox-in" type="checkbox" value="java"> Java 
+        </label>
+        
+        <label id="checkbox-label"> 
+          <input class="checkbox-in" type="checkbox" value="c"> C/C++ 
+        </label>
+        
+        <label id="checkbox-label"> 
+          <input class="checkbox-in" type="checkbox" value="python"> Python 
+        </label>
+       
+        <label id="checkbox-label"> 
+          <input class="checkbox-in" type="checkbox" value="other"> Other 
+        </label>
+       
+      </div>
+      
+      <div class="form-parts">
+        <p>Would you like to help us improve?</p>
+        <textarea>
+          Enter additional comment...
+        </textarea>
+      </div>
+      
+      <div class="form-parts">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+
+    </form>
+  </body>
